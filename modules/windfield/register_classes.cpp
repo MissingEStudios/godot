@@ -4,14 +4,14 @@
 #include "core/object/class_db.h"
 
 
-void initialize_zombie_module(ModuleInitializationLevel p_level) {
+void initialize_windfield_module(ModuleInitializationLevel p_level) {
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
 	ClassDB::register_class<Health>();
 }
 
-void unintialize_zombie_module(ModuleInitializationLevel p_level) {
+void unintialize_windfield_module(ModuleInitializationLevel p_level) {
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}

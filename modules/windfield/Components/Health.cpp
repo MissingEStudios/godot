@@ -24,7 +24,7 @@ Health::Health(Health &&other) noexcept {
 	current_health = other.current_health;
 }
 
-Health & Health::operator=(Health &&other) noexcept {
+Health& Health::operator=(Health &&other) noexcept {
 	if (this != &other) {
 		max_health = other.max_health;
 		current_health = other.current_health;
